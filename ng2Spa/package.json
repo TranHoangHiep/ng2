@@ -1,0 +1,50 @@
+{
+  "name": "spa-manager",
+  "version": "0.5.0",
+  "author": "Hoang.Hiep",
+  "description": "Manager Spa",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lint": "tslint ./app/**/*.ts -t verbose",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.2.3",
+    "@angular/compiler": "^2.2.3",
+    "@angular/core": "^2.2.3",
+    "@angular/forms": "^2.2.3",
+    "@angular/http": "^2.2.3",
+    "@angular/platform-browser": "^2.2.3",
+    "@angular/platform-browser-dynamic": "^2.2.3",
+    "@angular/router": "^3.2.3",
+    "@angular2-material/core": "^2.0.0-alpha.8-2",
+    "@angular2-material/sidenav": "^2.0.0-alpha.8-2",
+    "core-js": "^2.4.1",
+    "ng2-material": "^0.8.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-rc.4",
+    "systemjs": "^0.19.41",
+    "typescript": "^2.0.10",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "tslint": "^4.0.2",
+    "typescript": "^2.0.10",
+    "typings": "^2.0.0",
+    "style-loader": "^0.13.1",
+    "sass-loader": "^4.0.2",
+    "postcss-loader": "^1.2.0",
+    "node-sass": "^3.13.0",
+    "css-loader": "^0.26.1"
+  },
+  "repository": {
+    "url": "https://github.com/onsup/ng2SexyBong"
+  }
+}
