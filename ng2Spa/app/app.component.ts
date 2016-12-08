@@ -1,27 +1,20 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sampleapp',
+    selector: 'body',
     template: `
-        <!-- header -->
-        <div>
-            <div>
-                <!-- logo -->
-                <div class="logo"><a href="/"><img src="http://images.tienphong.vn/hoahau/App_Themes/Version2/images/logo.png" alt=""></a></div>
-                <div class="clearfix"></div>
-            </div>
-            
-            <!-- menu -->
-            <menu id="mainMnu"></menu>
-        </div>
-        
-        <!-- outlet -->
-        <router-outlet></router-outlet>
-        
-        <!-- footer -->
-        <div class="footer">Footer</div>
-        <div class="clearfix"></div>
-     `
+        <div class="wrapper">
+            <header class="main-header" id="header"></header>
+
+            <!-- /.sidebar -->
+            <aside class="main-sidebar" id="sidebar"></aside>
+
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark"></aside>
+            <!-- /.control-sidebar -->
+            <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+            <div class="control-sidebar-bg"></div>
+        <div>`
 })
 
 

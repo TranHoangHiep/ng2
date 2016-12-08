@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
+import { Header } from './header';
 // import { Menu }  from './Menu';
 
 // import { HomeComponent } from './static/home.component';
@@ -21,6 +22,8 @@ import { AppComponent }  from './app.component';
     // Menu, //directive
     AppComponent, //bootstrap
     // HomeComponent, //home directive/page
+    Header,
+    SideBar
   ],
   bootstrap: [ AppComponent ]
 })

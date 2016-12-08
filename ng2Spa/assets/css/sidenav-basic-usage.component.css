@@ -1,4 +1,5 @@
 @import '../../shared/styles.scss';
+
 md-sidenav[mode=side] {
   background-color: md-color($md-accent, 500);
 }
