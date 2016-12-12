@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
 import { Header } from './header';
+import { SideBar } from './sidebar';
+import { Content } from './content';
 // import { Menu }  from './Menu';
 
 // import { HomeComponent } from './static/home.component';
@@ -23,7 +25,8 @@ import { Header } from './header';
     AppComponent, //bootstrap
     // HomeComponent, //home directive/page
     Header,
-    SideBar
+    SideBar,
+    Content
   ],
   bootstrap: [ AppComponent ]
 })

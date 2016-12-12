@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 
             <!-- /.sidebar -->
             <aside class="main-sidebar" id="sidebar"></aside>
-
+            
+            <!-- content -->
+            <div class="content-wrapper"></div>
             <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark"></aside>
             <!-- /.control-sidebar -->
