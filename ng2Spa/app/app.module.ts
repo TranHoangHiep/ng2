@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
 import { Header } from './header';
+import { SideBar } from './sidebar';
 // import { Menu }  from './Menu';
 
 // import { HomeComponent } from './static/home.component';

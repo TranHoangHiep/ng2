@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
             <header class="main-header" id="header"></header>
 
             <!-- /.sidebar -->
-            <aside class="main-sidebar" id="sidebar"></aside>
+            <aside class="main-sidebar" id="main-sidebar"></aside>
 
             <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark"></aside>
