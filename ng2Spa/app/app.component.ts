@@ -7,15 +7,13 @@ import { Component } from '@angular/core';
             <header class="main-header" id="header"></header>
 
             <!-- /.sidebar -->
-<<<<<<< HEAD
-            <aside class="main-sidebar" id="main-sidebar"></aside>
-
-=======
             <aside class="main-sidebar" id="sidebar"></aside>
             
             <!-- content -->
-            <div class="content-wrapper"></div>
->>>>>>> 71954c65cc89914735b1437b58427683a0d658ce
+            <div class="content-wrapper">
+                <router-outlet></router-outlet>
+            </div>
+            
             <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark"></aside>
             <!-- /.control-sidebar -->

@@ -6,11 +6,9 @@ import { RouterModule } from '@angular/router';
 import { AppComponent }  from './app.component';
 import { Header } from './header';
 import { SideBar } from './sidebar';
-<<<<<<< HEAD
-=======
 import { Content } from './content';
->>>>>>> 71954c65cc89914735b1437b58427683a0d658ce
-// import { Menu }  from './Menu';
+import { Todos } from './static/todos.component';
+// import { Menu }  from './menu';
 
 // import { HomeComponent } from './static/home.component';
 
@@ -20,6 +18,7 @@ import { Content } from './content';
     HttpModule,
     RouterModule.forRoot([
       // { path: '', component: HomeComponent },
+      // { path: 'todos', component: Todos},
       { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
   ],
@@ -29,7 +28,7 @@ import { Content } from './content';
     // HomeComponent, //home directive/page
     Header,
     SideBar,
-    Content
+    Content,
   ],
   bootstrap: [ AppComponent ]
 })
