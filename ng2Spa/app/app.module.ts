@@ -6,6 +6,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent }  from './app.component';
 import { Header } from './header';
 import { SideBar } from './sidebar';
+<<<<<<< HEAD
+=======
+import { Content } from './content';
+>>>>>>> 71954c65cc89914735b1437b58427683a0d658ce
 // import { Menu }  from './Menu';
 
 // import { HomeComponent } from './static/home.component';
@@ -24,7 +28,8 @@ import { SideBar } from './sidebar';
     AppComponent, //bootstrap
     // HomeComponent, //home directive/page
     Header,
-    SideBar
+    SideBar,
+    Content
   ],
   bootstrap: [ AppComponent ]
 })
