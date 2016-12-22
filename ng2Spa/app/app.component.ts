@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
             <aside class="main-sidebar" id="sidebar"></aside>
             
             <!-- content -->
-            <router-outlet>
-                <div class="content-wrapper"></div>
-            </router-outlet>
+            <div class="content-wrapper">
+                <router-outlet></router-outlet>
+            </div>
             
             <!-- Control Sidebar -->
             <aside class="control-sidebar control-sidebar-dark"></aside>
