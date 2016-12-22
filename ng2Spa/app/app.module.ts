@@ -7,6 +7,7 @@ import { AppComponent }  from './app.component';
 import { Header } from './header';
 import { SideBar } from './sidebar';
 import { Content } from './content';
+import { Todos } from './static/todos.component';
 // import { Menu }  from './Menu';
 
 // import { HomeComponent } from './static/home.component';
@@ -17,7 +18,9 @@ import { Content } from './content';
     HttpModule,
     RouterModule.forRoot([
       // { path: '', component: HomeComponent },
-      { path: '**', redirectTo: '', pathMatch: 'full' }
+      
+      { path: '**', redirectTo: '', pathMatch: 'full' },
+      { path: 'todos', component: Todos }
     ]),
   ],
   declarations: [
