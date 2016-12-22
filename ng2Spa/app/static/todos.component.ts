@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { Http } from "@angular/http";
 
 @Component({
-    selector: 'header[id=header]',
-    templateUrl: 'app/static/dashboard/header.html'
+    template: 'hello',
 })
 
 export class Todos{

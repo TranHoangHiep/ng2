@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: 'app/static/dashboard/content.html'
 })
 
-export class Content{
+export class Admin{
 
 }

@@ -6,9 +6,9 @@ import { RouterModule } from '@angular/router';
 import { AppComponent }  from './app.component';
 import { Header } from './header';
 import { SideBar } from './sidebar';
-import { Content } from './content';
+import { Admin } from './admin';
 import { Todos } from './static/todos.component';
-// import { Menu }  from './Menu';
+// import { Menu }  from './menu';
 
 // import { HomeComponent } from './static/home.component';
 
@@ -18,10 +18,12 @@ import { Todos } from './static/todos.component';
     HttpModule,
     RouterModule.forRoot([
       // { path: '', component: HomeComponent },
-      
-      { path: '**', redirectTo: '', pathMatch: 'full' },
-      { path: 'todos', component: Todos }
+      { path: 'admin', component: Admin},
+      { path: 'todos', component: Todos},
+      { path: '', redirectTo: 'admin', pathMatch: 'full'},
+      { path: '**', redirectTo: '', pathMatch: 'full' }
     ]),
+    // Todos
   ],
   declarations: [
     // Menu, //directive
@@ -29,7 +31,8 @@ import { Todos } from './static/todos.component';
     // HomeComponent, //home directive/page
     Header,
     SideBar,
-    Content
+    Admin,
+    Todos,
   ],
   bootstrap: [ AppComponent ]
 })
