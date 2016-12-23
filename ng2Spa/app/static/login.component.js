@@ -9,17 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var Todos = (function () {
-    function Todos() {
+var Login = (function () {
+    function Login() {
     }
-    return Todos;
+    return Login;
 }());
-Todos = __decorate([
+Login = __decorate([
     core_1.Component({
-        // template: 'hello',
-        templateUrl: 'app/static/dashboard/todos.html',
+        templateUrl: 'app/static/dashboard/login.html'
     }),
     __metadata("design:paramtypes", [])
-], Todos);
-exports.Todos = Todos;
-//# sourceMappingURL=todos.component.js.map
+], Login);
+exports.Login = Login;
+//# sourceMappingURL=login.component.js.map

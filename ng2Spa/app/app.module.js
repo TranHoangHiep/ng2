@@ -17,6 +17,7 @@ var header_1 = require("./header");
 var sidebar_1 = require("./sidebar");
 var admin_1 = require("./admin");
 var todos_component_1 = require("./static/todos.component");
+// import { Login } from './static/login.component';
 // import { Menu }  from './menu';
 // import { HomeComponent } from './static/home.component';
 var AppModule = (function () {
@@ -31,16 +32,18 @@ AppModule = __decorate([
             http_1.HttpModule,
             router_1.RouterModule.forRoot([
                 // { path: '', component: HomeComponent },
+                // { path: 'login', component: Login},
                 { path: 'admin', component: admin_1.Admin },
                 { path: 'todos', component: todos_component_1.Todos },
                 { path: '', redirectTo: 'admin', pathMatch: 'full' },
-                { path: '**', redirectTo: '', pathMatch: 'full' }
+                { path: '**', redirectTo: 'admin', pathMatch: 'full' }
             ]),
         ],
         declarations: [
             // Menu, //directive
             app_component_1.AppComponent,
             // HomeComponent, //home directive/page
+            // Login,
             header_1.Header,
             sidebar_1.SideBar,
             admin_1.Admin,

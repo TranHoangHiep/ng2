@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var Todos = (function () {
-    function Todos() {
+var Content = (function () {
+    function Content() {
     }
-    return Todos;
+    return Content;
 }());
-Todos = __decorate([
+Content = __decorate([
     core_1.Component({
-        // template: 'hello',
-        templateUrl: 'app/static/dashboard/todos.html',
+        selector: 'div[class=content-wrapper]',
+        templateUrl: 'app/static/dashboard/content.html'
     }),
     __metadata("design:paramtypes", [])
-], Todos);
-exports.Todos = Todos;
-//# sourceMappingURL=todos.component.js.map
+], Content);
+exports.Content = Content;
+//# sourceMappingURL=content.js.map

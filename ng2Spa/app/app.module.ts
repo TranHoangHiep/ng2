@@ -8,6 +8,7 @@ import { Header } from './header';
 import { SideBar } from './sidebar';
 import { Admin } from './admin';
 import { Todos } from './static/todos.component';
+// import { Login } from './static/login.component';
 // import { Menu }  from './menu';
 
 // import { HomeComponent } from './static/home.component';
@@ -18,10 +19,11 @@ import { Todos } from './static/todos.component';
     HttpModule,
     RouterModule.forRoot([
       // { path: '', component: HomeComponent },
+      // { path: 'login', component: Login},
       { path: 'admin', component: Admin},
       { path: 'todos', component: Todos},
       { path: '', redirectTo: 'admin', pathMatch: 'full'},
-      { path: '**', redirectTo: '', pathMatch: 'full' }
+      { path: '**', redirectTo: 'admin', pathMatch: 'full' }
     ]),
     // Todos
   ],
@@ -29,6 +31,7 @@ import { Todos } from './static/todos.component';
     // Menu, //directive
     AppComponent, //bootstrap
     // HomeComponent, //home directive/page
+    // Login,
     Header,
     SideBar,
     Admin,
