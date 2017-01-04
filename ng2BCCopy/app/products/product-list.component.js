@@ -8,11 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-//java, ...
 var core_1 = require('@angular/core');
-//service
 var product_service_1 = require('./product.service');
-//decorator
 var ProductListComponent = (function () {
     //aggregration
     //DI
@@ -46,10 +43,9 @@ var ProductListComponent = (function () {
             templateUrl: 'app/products/product-list.component.html',
             styleUrls: ['app/products/product-list.component.css']
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof product_service_1.ProductService !== 'undefined' && product_service_1.ProductService) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [product_service_1.ProductService])
     ], ProductListComponent);
     return ProductListComponent;
-    var _a;
 }());
 exports.ProductListComponent = ProductListComponent;
 //# sourceMappingURL=product-list.component.js.map

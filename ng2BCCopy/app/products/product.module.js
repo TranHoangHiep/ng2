@@ -11,18 +11,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var product_component_1 = require('./product.component');
+var product_list_component_1 = require('./product-list.component');
+// import { ProductDetailComponent } from './product-detail.component';
+// import { ProductFilterPipe } from './product-filter.pipe';
+// import { CatIdToNamePipe } from './catIdToName.pipe';
+// import { ProductDetailGuard } from './product-guard.service';
+var product_service_1 = require('./product.service');
+var common_1 = require('@angular/common');
+var forms_1 = require('@angular/forms');
 var ProductModule = (function () {
     function ProductModule() {
     }
     ProductModule = __decorate([
         core_1.NgModule({
+            declarations: [
+                product_component_1.ProductComponent,
+                product_list_component_1.ProductListComponent,
+            ],
             imports: [
+                // SharedModule,
+                common_1.CommonModule,
+                forms_1.FormsModule,
                 router_1.RouterModule.forChild([
-                    { path: 'products', component: product_component_1.ProductComponent },
+                    { path: 'products', component: product_component_1.ProductComponent,
+                        children: [
+                            { path: '', component: product_list_component_1.ProductListComponent },
+                        ]
+                    }
                 ])
             ],
-            declarations: [
-                product_component_1.ProductComponent
+            providers: [
+                product_service_1.ProductService,
             ]
         }), 
         __metadata('design:paramtypes', [])

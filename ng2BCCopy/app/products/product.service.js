@@ -18,28 +18,17 @@ require('rxjs/add/operator/map');
 var ProductService = (function () {
     function ProductService(_http) {
         this._http = _http;
-        this._productUrl = 'api/products/products.json';
-        this._productDetailUrl = 'api/products/p%id%.json';
+        this._productURL = 'api/products/products.json';
+        this._productDetailURL = 'api/products/p%id%.json';
     }
-    //logic
     ProductService.prototype.getProducts = function () {
-        return this._http.get(this._productUrl)
+        return this._http.get(this._productURL)
             .map(function (response) { return response.json(); })
             .do(function (data) { return console.log('All: ' + JSON.stringify(data)); })
             .catch(this.handleError);
     };
-    //get 1
-    ProductService.prototype.getProductById = function (id) {
-        var search = new RegExp("%id%");
-        var url = this._productDetailUrl.replace(search, "" + id);
-        var result = this._http.get(url)
-            .map(function (response) {
-            return response.json().result.data;
-        });
-        return result;
-    };
     ProductService.prototype.handleError = function (error) {
-        console.error(error);
+        console.log(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');
     };
     ProductService = __decorate([
