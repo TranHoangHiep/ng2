@@ -7,5 +7,9 @@ import { Http } from "@angular/http";
 })
 
 export class Todos{
-    
+    value = '';
+    onEnter(value: string){
+        this.value = value;
+        alert(this.value);
+    }
 }
